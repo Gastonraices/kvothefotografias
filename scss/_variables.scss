@@ -1,0 +1,15 @@
+$fuentes: 'Bebas Neue', sans-serif;
+
+$estilos:(
+    fondo: white,
+    fuente: 21px,
+    color: black,
+);
+
+@mixin flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
