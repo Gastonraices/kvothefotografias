@@ -12,8 +12,7 @@
     grid-template-columns: repeat(4, 4fr);
     grid-template-areas: 
     "nav nav nav nav"
-    "titulo titulo titulo titulo"
-    ;
+    "titulo titulo titulo titulo";
 }
 
 /*--------------GRID ESTRUCTURA------------*/
@@ -640,7 +639,7 @@ img{
 @media screen and (max-width: 767px) {
     .contenedor{
         grid-template-columns: 1fr;
-        grid-template-rows: 150px 400px 300px;
+        grid-template-rows: 150px 605px;
     }
     
     .menu{
