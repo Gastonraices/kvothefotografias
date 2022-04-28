@@ -8,12 +8,11 @@
 
 .contenedor{
     display: grid;
-    grid-template-rows: 60px 800px 200px;
+    grid-template-rows: 60px 670px;
     grid-template-columns: repeat(4, 4fr);
     grid-template-areas: 
     "nav nav nav nav"
     "titulo titulo titulo titulo"
-    "footer footer footer footer"
     ;
 }
 
@@ -25,6 +24,9 @@ header{
     grid-area: nav;
     background-color: black;
     padding-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
 .navegacion{
@@ -142,13 +144,13 @@ footer p{
 
 .contenedor5{
     display: grid;
-    grid-template-rows: 60px 600px 200px;
+    grid-template-rows: 60px 600px;
     grid-template-columns: repeat(1, 4fr);
     grid-template-areas: 
     "nav nav nav nav"
-    "titulo titulo titulo titulo"
-    "footer footer footer footer"
-    ;
+    "titulo titulo titulo titulo";
+    background-color: black;
+    
 }
 
 .contenedorportafolio{
@@ -156,27 +158,29 @@ footer p{
     grid-template-columns: repeat(4, 300px);
     grid-template-rows: repeat(3, 200px);
     grid-template-areas: 
-    "img1 img2 img3 img6"
-    "img1 img5 img4 img6"
-    "img1 img7 img8 img6";
+    "img9 img2 img3 img12"
+    "img10 img5 img4 img13"
+    "img11 img7 img8 img14";
     justify-content: center;
     gap: 7px;
-    background-color: black;
+    padding-top: 100px;
 }
 
 
-.img1{
-    grid-area: img1;
-    background-image: url("../multimedia/img1.jpg");
+.img9{
+    grid-area: img9;
+    background-image: url("../multimedia/img9.jpg");
     background-position: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: grayscale(100%);
 }
-.img1:hover{
+.img9:hover{
     filter: opacity(0.9);
     transform: scale(1.07);
     cursor: pointer;
+    filter: none;
 }
 .img2:hover{
     filter: opacity(0.9);
@@ -188,7 +192,7 @@ footer p{
     transform: scale(1.07);
     cursor: pointer;
 }
-.img6:hover{
+.img12:hover{
     filter: opacity(0.9);
     transform: scale(1.07);
     cursor: pointer;
@@ -213,6 +217,26 @@ footer p{
     transform: scale(1.07);
     cursor: pointer;
 }
+.img10:hover{
+    filter: opacity(0.9);
+    transform: scale(1.07);
+    cursor: pointer;
+}
+.img11:hover{
+    filter: opacity(0.9);
+    transform: scale(1.07);
+    cursor: pointer;
+}
+.img13:hover{
+    filter: opacity(0.9);
+    transform: scale(1.07);
+    cursor: pointer;
+}
+.img14:hover{
+    filter: opacity(0.9);
+    transform: scale(1.07);
+    cursor: pointer;
+}
 
 .img2{
     grid-area: img2;
@@ -220,6 +244,7 @@ footer p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: grayscale(100%);
 }
 
 .img3{
@@ -228,13 +253,15 @@ footer p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: grayscale(100%);
 }
-.img6{
-    grid-area: img6;
-    background-image: url("../multimedia/img6.jpg");
+.img12{
+    grid-area: img12;
+    background-image: url("../multimedia/img12.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: grayscale(100%);
 }
 
 .img5{
@@ -243,6 +270,7 @@ footer p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: grayscale(100%);
 }
 
 .img4{
@@ -251,6 +279,7 @@ footer p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: grayscale(100%);
 }
 
 .img7{
@@ -259,6 +288,7 @@ footer p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: grayscale(100%);
 }
 .img8{
     grid-area: img8;
@@ -266,7 +296,44 @@ footer p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: grayscale(100%);
 }
+
+.img10{
+    grid-area: img10;
+    background-image: url("../multimedia/img10.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.img11{
+    grid-area: img11;
+    background-image: url("../multimedia/img11.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+.img13{
+    grid-area: img13;
+    background-image: url("../multimedia/img13.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+.img14{
+    grid-area: img14;
+    background-image: url("../multimedia/img14.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+
 
 /*---------------PORTAFOLIO-------------*/
 
@@ -335,7 +402,7 @@ img{
 
 .contenedor3{
     display: grid;
-    grid-template-rows: 60px 200px 600px 200px;
+    grid-template-rows: 60px 200px 700px 200px;
     grid-template-columns: repeat(4, 4fr);
     grid-template-areas: 
     "nav nav nav nav"
@@ -378,7 +445,6 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 .contactar h1{
     display: flex;
@@ -389,9 +455,9 @@ img{
 .contactar form{
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 22px;
     padding: 50px 40px;
-    width: 450px;
+    width: 455px;
 }
 
 .contactar input, textarea{
@@ -413,7 +479,7 @@ img{
 
 .enviar:hover{
     cursor: pointer;
-    background-color: #CACFD2;
+    background-color: white;
 }
 
 /*---------------CONTACTO-------------*/
@@ -422,14 +488,17 @@ img{
 
 .contenedor4{
     display: grid;
-    grid-template-rows: 60px 150px 600px 200px;
+    grid-template-rows: 60px 150px 300px 300px 300px 310px;
     grid-template-columns: repeat(4, 4fr);
     grid-template-areas: 
     "nav nav nav nav"
     "reservas reservas reservas reservas"
-    "serv serv serv serv"
+    "serv1 serv1 serv1 serv1"
+    "serv2 serv2 serv2 serv2"
+    "serv3 serv3 serv3 serv3"
     "footer footer footer footer"
     ;
+    background-color: black;
 }
 
 .reservas{
@@ -444,21 +513,6 @@ img{
     text-shadow: 6px 6px black;
 }
 
-.servicios{
-    background-color: whitesmoke;
-    grid-area: serv;
-    display: flex;
-    justify-content: space-evenly;
-    font-family: 'Bebas Neue', sans-serif;
-}
-
-.servicios img{
-    width: 300px;
-    display: flex;
-    margin-top: 20px;
-    border: 5px double black;
-}
-
 .servicios h3{
     display: flex;
     justify-content: space-evenly;
@@ -467,12 +521,90 @@ img{
     background-color: gray;
     letter-spacing: 10px;
 }
-
-.servicios img:hover{
+.serv1{
+    grid-area: serv1;
+    background-image: url("../multimedia/servicio2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 10px;
+    margin-top: 30px;
+}
+.serv1 a{
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 90px;
+    margin-top: 50px;
+    color: white;
+    background-color: black;
+    text-shadow: 6px 6px black;
+    padding: 10px;
+    margin: 40px;
+    text-decoration: none;
+}
+.serv1 a:hover{   
     filter: opacity(0.9);
     transform: scale(1.07);
     cursor: pointer;
+    color: #F4D03F;
 }
+.serv2{
+    grid-area: serv2;
+    background-image: url("../multimedia/servicio1.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 10px;
+}
+.serv2 a{
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 90px;
+    margin-top: 50px;
+    color: white;
+    background-color: black;
+    text-shadow: 6px 6px black;
+    padding: 10px;
+    margin: 40px;
+    text-decoration: none;
+}
+.serv2 a:hover{   
+    filter: opacity(0.9);
+    transform: scale(1.07);
+    cursor: pointer;
+    color: #F4D03F;
+}
+.serv3{
+    grid-area: serv3;
+    background-image: url("../multimedia/servicio3.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 10px;
+}
+.serv3 a{
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 90px;
+    margin-top: 50px;
+    color: white;
+    background-color: black;
+    text-shadow: 6px 6px black;
+    padding: 10px;
+    margin: 40px;
+    text-decoration: none;
+}
+.serv3 a:hover{   
+    filter: opacity(0.9);
+    transform: scale(1.07);
+    cursor: pointer;
+    color: #F4D03F;
+}
+
+
 
 /*---------------SERVICIOS-------------*/
 
@@ -501,17 +633,7 @@ img{
     margin-top: 60px;
 }
 
-.contenedorportafolio{
-    display: grid;
-    grid-template-columns: repeat(4, 175px);
-    grid-template-rows: repeat(3, 200px);
-    grid-template-areas: 
-    "img1 img2 img3 img6"
-    "img1 img5 img4 img6"
-    "img1 img7 img8 img6";
-    justify-content: center;
-    gap: 7px;
-    }
+
 }
 
 
@@ -603,9 +725,126 @@ img{
 }
 /*------------------------------------------------------*/
 
-
+.contenedor5{
+    display: grid;
+    grid-template-rows: 60px 950px;
+    grid-template-columns: 4fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "titulo titulo titulo titulo";
+    background-color: black;
+    
 }
 
+
+.contenedorportafolio{
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    grid-template-rows: repeat(12, 220px);
+    grid-template-areas: 
+    "img9" 
+    "img2"
+    "img3" 
+    "img12"
+    "img10"
+    "img5"
+    "img4" 
+    "img13"
+    "img11"
+    "img7 "
+    "img8"
+    "img14";
+    justify-content: center;
+    gap: 3px;
+    padding-top: 220px;
+}
+.img9{
+    filter: none;
+}
+.img2{
+    filter: none;
+}
+.img3{
+    filter: none;
+}
+.img4{
+    filter: none;
+}
+.img5{
+    filter: none;
+}
+.img7{
+    filter: none;
+}
+.img8{
+    filter: none;
+}
+.img9{
+    filter: none;
+}
+.img10{
+    filter: none;
+}
+.img11{
+    filter: none;
+}
+.img12{
+    filter: none;
+}
+.img13{
+    filter: none;
+}
+.img14{
+    filter: none;
+}
+
+.img9:hover{
+    filter: none;
+    transform: none;
+    cursor: none;
+    filter: none;
+}
+
+
+.img2:hover{
+    filter: none;
+    transform: none;
+    cursor: none;
+    filter: none;
+}
+
+
+/*------------------------------------------------------*/
+.contenedor4{
+    display: grid;
+    grid-template-rows: 60px 330px 300px 300px 300px 310px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "reservas reservas reservas reservas"
+    "serv1 serv1 serv1 serv1"
+    "serv2 serv2 serv2 serv2"
+    "serv3 serv3 serv3 serv3"
+    "footer footer footer footer"
+    ;
+    background-color: black;
+}
+
+.reservas h3{
+    font-size: 70px;
+    margin-top: 10px;
+}
+.serv1 a{
+    font-size: 50px;
+}
+.serv2 a{
+    font-size: 45px;
+}
+.serv3 a{
+    font-size: 50px;
+}
+
+}
 
 
 
