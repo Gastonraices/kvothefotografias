@@ -130,7 +130,7 @@ footer li a:hover{
 footer h1{
     font-size: 40px;
 }
-footer p{
+footer h5{
     padding: 7px;
     font-size: 20px;
     font-weight: bold;
@@ -340,22 +340,37 @@ footer p{
 
 .contenedor2{
     display: grid;
-    grid-template-rows: 60px 700px 200px;
+    grid-template-rows: 60px 300px 700px 300px;
     grid-template-columns: repeat(4, 4fr);
     grid-template-areas: 
     "nav nav nav nav"
+    "tisobremi tisobremi tisobremi tisobremi"
     "sobremi sobremi sobremi sobremi"
     "footer footer footer footer"
     ;
 }
 
-.principalsobremi{
-    grid-area: sobremi;
+.titulosobremi {
+    grid-area: tisobremi;
     display: flex;
-    flex-direction: row;
-    background-color: black ;
-    font-family:  'League Gothic', sans-serif;;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #F2F4F4;
+    letter-spacing: 2px;
+    font-size: 60px;
+    text-shadow: 6px 6px black;
+    background-image: url("../multimedia/fotomi.jpg");
+    background-position: center;
+}
 
+.principalsobremi{
+        grid-area: sobremi;
+        display: flex;
+        flex-direction: row;
+        font-family:  'League Gothic', sans-serif;
+        justify-content: space-evenly;
+        background-color: black;
 }
 
 .textosobremi{
@@ -363,37 +378,21 @@ footer p{
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin: 30px;
-    color: white;
+    margin: 80px;
 }
-img{
-    width: 450px;
-    margin: 15px;
-    padding: 2px;
-    margin-top: 50px;
-}
-
-.textosobremi h1{
-    font-size: 90px;
-    padding: 15px;
-    margin: 1px;
-    text-decoration: underline black; 
-    color: white;
-}
-
 .textosobremi p{
-    font-size: 20px;
-
+    color: white;
+    font-size: 30px;
+    padding: 30px;
 }
-.textosobremi h3{
+
+.textosobremi h4{
+    font-size: 70px;
     padding: 10px;
     margin: 20px;
-    font-size: 30px;
-    border: 5px double black;
-    color: black;
-    background-color: grey;
+    color: #F4D03F;
+    text-shadow: 2px 2px black;
 }
-
 
 /*---------------SOBRE MI-------------*/
 
@@ -401,7 +400,7 @@ img{
 
 .contenedor3{
     display: grid;
-    grid-template-rows: 60px 200px 700px 200px;
+    grid-template-rows: 60px 200px 700px 300px;
     grid-template-columns: repeat(4, 4fr);
     grid-template-areas: 
     "nav nav nav nav"
@@ -431,7 +430,7 @@ img{
     flex-direction: row;
     font-family:  'League Gothic', sans-serif;
     justify-content: space-evenly;
-    background-color: #ECF0F1;
+    background-color: black;
 }
 .infopersonal{
     display: flex;
@@ -439,6 +438,8 @@ img{
     flex-direction: column;
     font-size: 30px;
     margin-top: 30px;
+    color: #F4D03F;
+    text-shadow: 3px 3px black;
 }
 .contactar{
     display: flex;
@@ -450,19 +451,21 @@ img{
     justify-content: center;
     font-size: 70px;
     margin-top: 60px;
+    color: white;
 }
 .contactar form{
     display: flex;
     flex-direction: column;
-    font-size: 22px;
+    font-size: 30px;
     padding: 50px 40px;
     width: 455px;
+    color: white;
 }
 
 .contactar input, textarea{
     width: 100%;
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 20px;
 }
 .contactar textarea {
     min-height: 100px;
@@ -471,14 +474,16 @@ img{
 }
 
 .enviar{
-    background-color: gray;
+    background-color: white;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: bold;
+    color: black;
+    
 }
 
 .enviar:hover{
     cursor: pointer;
-    background-color: white;
+    background-color: gold;
 }
 
 /*---------------CONTACTO-------------*/
@@ -495,8 +500,7 @@ img{
     "serv1 serv1 serv1 serv1"
     "serv2 serv2 serv2 serv2"
     "serv3 serv3 serv3 serv3"
-    "footer footer footer footer"
-    ;
+    "footer footer footer footer";
     background-color: black;
 }
 
@@ -632,14 +636,37 @@ img{
     margin-top: 60px;
 }
 
+/*------------------------------------*/
+
+
+.textosobremi{
+    margin: 15px;
+    padding: 10px;
+}
+.titulosobremi{
+}
+.titulosobremi h1{
+    font-size: 60px;
+    margin-top: 10px;
+}
+.textosobremi p{
+    margin-top: 5px;
+    font-size: 20px;
+}
+.textosobremi h4{
+    font-size: 70px;
+}
 
 }
+
+
+
 
 
 @media screen and (max-width: 767px) {
     .contenedor{
         grid-template-columns: 1fr;
-        grid-template-rows: 150px 605px;
+        grid-template-rows: 150px 600px;
     }
     
     .menu{
@@ -811,6 +838,73 @@ img{
     cursor: none;
     filter: none;
 }
+.img3:hover{
+    filter: none;
+    transform: none;
+    cursor: none;
+    filter: none;
+}
+.img4:hover{
+    filter: none;
+    transform: none;
+    cursor: none;
+    filter: none;
+}
+.img5:hover{
+    filter: none;
+    transform: none;
+    cursor: none;
+    filter: none;
+}
+.img7:hover{
+    filter: none;
+    transform: none;
+    cursor: none;
+    filter: none;
+}
+.img8:hover{
+    filter: none;
+    transform: none;
+    cursor: none;
+    filter: none;
+}
+.img9:hover{
+    filter: none;
+    transform: none;
+    cursor: none;
+    filter: none;
+}
+.img10:hover{
+    filter: none;
+    transform: none;
+    cursor: none;
+    filter: none;
+}
+.img11:hover{
+    filter: none;
+    transform: none;
+    cursor: none;
+    filter: none;
+}
+.img12:hover{
+    filter: none;
+    transform: none;
+    cursor: none;
+    filter: none;
+}
+.img13:hover{
+    filter: none;
+    transform: none;
+    cursor: none;
+    filter: none;
+}
+
+.img14:hover{
+    filter: none;
+    transform: none;
+    cursor: none;
+    filter: none;
+}
 
 
 /*------------------------------------------------------*/
@@ -840,6 +934,30 @@ img{
     font-size: 45px;
 }
 .serv3 a{
+    font-size: 50px;
+}
+
+/*------------------------------------------------------*/
+
+
+
+
+.textosobremi{
+    margin: 15px;
+    padding: 10px;
+}
+.titulosobremi{
+    margin-top: 80px;
+}
+.titulosobremi h1{
+    font-size: 60px;
+    margin-top: 10px;
+}
+.textosobremi p{
+    margin-top: 5px;
+    font-size: 15px;
+}
+.textosobremi h4{
     font-size: 50px;
 }
 
