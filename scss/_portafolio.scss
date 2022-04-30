@@ -1,0 +1,158 @@
+.contenedor5{
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: repeat(1, 4fr);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "titulo titulo titulo titulo";
+    background-color: black;
+    
+}
+
+.portafolio{
+    grid-area: titulo;
+    .contenedorportafolio{
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas: 
+        "img9 img2 img3 img12"
+        "img10 img5 img4 img13"
+        "img11 img7 img8 img14";
+        justify-content: center;
+        gap: 7px;
+        margin-top: 40px;
+        .img9{
+            grid-area: img9;
+            background-image: url("../multimedia/img9.jpg");
+            @include background;
+            &:hover{    
+                filter: opacity(0.9);
+                transform: scale(1.07);
+                cursor: pointer;
+                filter: none;
+            }
+        }
+        .img2{
+            grid-area: img2;
+            background-image: url("../multimedia/img2.jpg");
+            @include background;
+            &:hover{    
+                filter: opacity(0.9);
+                transform: scale(1.07);
+                cursor: pointer;
+                filter: none;
+            }
+        }
+        .img3{
+            grid-area: img3;
+            background-image: url("../multimedia/img3.jpg");
+            @include background;
+            &:hover{    
+                filter: opacity(0.9);
+                transform: scale(1.07);
+                cursor: pointer;
+                filter: none;
+            }
+        }
+        .img12{
+            grid-area: img12;
+            background-image: url("../multimedia/img12.jpg");
+            @include background;
+            &:hover{    
+                filter: opacity(0.9);
+                transform: scale(1.07);
+                cursor: pointer;
+                filter: none;
+            }
+        }
+        .img5{
+            grid-area: img5;
+            background-image: url("../multimedia/img5.jpg");
+            @include background;
+            &:hover{    
+                filter: opacity(0.9);
+                transform: scale(1.07);
+                cursor: pointer;
+                filter: none;
+            }
+        }
+        .img4{
+            grid-area: img4;
+            background-image: url("../multimedia/img4.jpg");
+            @include background;
+            &:hover{    
+                filter: opacity(0.9);
+                transform: scale(1.07);
+                cursor: pointer;
+                filter: none;
+            }
+        }
+        .img7{
+            grid-area: img7;
+            background-image: url("../multimedia/img7.jpg");          
+            @include background;
+            &:hover{    
+                filter: opacity(0.9);
+                transform: scale(1.07);
+                cursor: pointer;
+                filter: none;
+            }
+        }
+        .img8{
+            grid-area: img8;
+            background-image: url("../multimedia/img8.jpg");
+            @include background;
+            &:hover{    
+                filter: opacity(0.9);
+                transform: scale(1.07);
+                cursor: pointer;
+                filter: none;
+            }
+        }
+        .img10{
+            grid-area: img10;
+            background-image: url("../multimedia/img10.jpg");
+            @include background;
+            &:hover{    
+                filter: opacity(0.9);
+                transform: scale(1.07);
+                cursor: pointer;
+                filter: none;
+            }
+        }
+        .img11{
+            grid-area: img11;
+            background-image: url("../multimedia/img11.jpg");
+            @include background;
+            &:hover{    
+                filter: opacity(0.9);
+                transform: scale(1.07);
+                cursor: pointer;
+                filter: none;
+            }
+        }
+        .img13{
+            grid-area: img13;
+            background-image: url("../multimedia/img13.jpg");
+            @include background;
+            &:hover{    
+                filter: opacity(0.9);
+                transform: scale(1.07);
+                cursor: pointer;
+                filter: none;
+            }
+        }
+        .img14{
+            grid-area: img14;
+            background-image: url("../multimedia/img14.jpg");
+            @include background;
+            &:hover{    
+                filter: opacity(0.9);
+                transform: scale(1.07);
+                cursor: pointer;
+                filter: none;
+            }
+        }
+}
+}

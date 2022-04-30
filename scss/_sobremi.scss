@@ -1,0 +1,59 @@
+
+.contenedor2{
+    display: grid;
+    grid-template-rows: 60px 300px 1fr 300px;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "tisobremi tisobremi tisobremi tisobremi"
+    "sobremi sobremi sobremi sobremi"
+    "footer footer footer footer"
+    ;
+}
+
+.titulosobremi {
+    grid-area: tisobremi;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fuentes;
+    color: #F2F4F4;
+    letter-spacing: 2px;
+    font-size: 60px;
+    text-shadow: 6px 6px black;
+    background-image: url("../multimedia/fotomi.jpg");
+    background-position: center;
+}
+
+.principalsobremi{
+    grid-area: sobremi;
+    display: flex;
+    flex-direction: row;
+    font-family: $fuentes;
+    justify-content: space-evenly;
+    background-color: black;
+    .textosobremi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 80px;
+        p{
+            color: white;
+            font-size: 30px;
+            padding: 30px;
+        }
+        h4{
+            font-size: 70px;
+            padding: 10px;
+            margin: 20px;
+            color: #F4D03F;
+            text-shadow: 2px 2px black;
+        }
+    }
+}
+
+
+/*------------------------------------*/
+
+

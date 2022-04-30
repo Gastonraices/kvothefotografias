@@ -1,18 +1,612 @@
+.contenedor5 {
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: repeat(1, 4fr);
+  grid-template-areas: "nav nav nav nav" "titulo titulo titulo titulo";
+  background-color: black; }
+
+.portafolio {
+  grid-area: titulo; }
+  .portafolio .contenedorportafolio {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: "img9 img2 img3 img12" "img10 img5 img4 img13" "img11 img7 img8 img14";
+    justify-content: center;
+    gap: 7px;
+    margin-top: 40px; }
+    .portafolio .contenedorportafolio .img9 {
+      grid-area: img9;
+      background-image: url("../multimedia/img9.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%); }
+      .portafolio .contenedorportafolio .img9:hover {
+        filter: opacity(0.9);
+        transform: scale(1.07);
+        cursor: pointer;
+        filter: none; }
+    .portafolio .contenedorportafolio .img2 {
+      grid-area: img2;
+      background-image: url("../multimedia/img2.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%); }
+      .portafolio .contenedorportafolio .img2:hover {
+        filter: opacity(0.9);
+        transform: scale(1.07);
+        cursor: pointer;
+        filter: none; }
+    .portafolio .contenedorportafolio .img3 {
+      grid-area: img3;
+      background-image: url("../multimedia/img3.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%); }
+      .portafolio .contenedorportafolio .img3:hover {
+        filter: opacity(0.9);
+        transform: scale(1.07);
+        cursor: pointer;
+        filter: none; }
+    .portafolio .contenedorportafolio .img12 {
+      grid-area: img12;
+      background-image: url("../multimedia/img12.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%); }
+      .portafolio .contenedorportafolio .img12:hover {
+        filter: opacity(0.9);
+        transform: scale(1.07);
+        cursor: pointer;
+        filter: none; }
+    .portafolio .contenedorportafolio .img5 {
+      grid-area: img5;
+      background-image: url("../multimedia/img5.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%); }
+      .portafolio .contenedorportafolio .img5:hover {
+        filter: opacity(0.9);
+        transform: scale(1.07);
+        cursor: pointer;
+        filter: none; }
+    .portafolio .contenedorportafolio .img4 {
+      grid-area: img4;
+      background-image: url("../multimedia/img4.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%); }
+      .portafolio .contenedorportafolio .img4:hover {
+        filter: opacity(0.9);
+        transform: scale(1.07);
+        cursor: pointer;
+        filter: none; }
+    .portafolio .contenedorportafolio .img7 {
+      grid-area: img7;
+      background-image: url("../multimedia/img7.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%); }
+      .portafolio .contenedorportafolio .img7:hover {
+        filter: opacity(0.9);
+        transform: scale(1.07);
+        cursor: pointer;
+        filter: none; }
+    .portafolio .contenedorportafolio .img8 {
+      grid-area: img8;
+      background-image: url("../multimedia/img8.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%); }
+      .portafolio .contenedorportafolio .img8:hover {
+        filter: opacity(0.9);
+        transform: scale(1.07);
+        cursor: pointer;
+        filter: none; }
+    .portafolio .contenedorportafolio .img10 {
+      grid-area: img10;
+      background-image: url("../multimedia/img10.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%); }
+      .portafolio .contenedorportafolio .img10:hover {
+        filter: opacity(0.9);
+        transform: scale(1.07);
+        cursor: pointer;
+        filter: none; }
+    .portafolio .contenedorportafolio .img11 {
+      grid-area: img11;
+      background-image: url("../multimedia/img11.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%); }
+      .portafolio .contenedorportafolio .img11:hover {
+        filter: opacity(0.9);
+        transform: scale(1.07);
+        cursor: pointer;
+        filter: none; }
+    .portafolio .contenedorportafolio .img13 {
+      grid-area: img13;
+      background-image: url("../multimedia/img13.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%); }
+      .portafolio .contenedorportafolio .img13:hover {
+        filter: opacity(0.9);
+        transform: scale(1.07);
+        cursor: pointer;
+        filter: none; }
+    .portafolio .contenedorportafolio .img14 {
+      grid-area: img14;
+      background-image: url("../multimedia/img14.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%); }
+      .portafolio .contenedorportafolio .img14:hover {
+        filter: opacity(0.9);
+        transform: scale(1.07);
+        cursor: pointer;
+        filter: none; }
+
+.contenedor2 {
+  display: grid;
+  grid-template-rows: 60px 300px 1fr 300px;
+  grid-template-columns: repeat(4, 4fr);
+  grid-template-areas: "nav nav nav nav" "tisobremi tisobremi tisobremi tisobremi" "sobremi sobremi sobremi sobremi" "footer footer footer footer"; }
+
+.titulosobremi {
+  grid-area: tisobremi;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", sans-serif;
+  color: #F2F4F4;
+  letter-spacing: 2px;
+  font-size: 60px;
+  text-shadow: 6px 6px black;
+  background-image: url("../multimedia/fotomi.jpg");
+  background-position: center; }
+
+.principalsobremi {
+  grid-area: sobremi;
+  display: flex;
+  flex-direction: row;
+  font-family: "Bebas Neue", sans-serif;
+  justify-content: space-evenly;
+  background-color: black; }
+  .principalsobremi .textosobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 80px; }
+    .principalsobremi .textosobremi p {
+      color: white;
+      font-size: 30px;
+      padding: 30px; }
+    .principalsobremi .textosobremi h4 {
+      font-size: 70px;
+      padding: 10px;
+      margin: 20px;
+      color: #F4D03F;
+      text-shadow: 2px 2px black; }
+
+/*------------------------------------*/
+.contenedor3 {
+  display: grid;
+  grid-template-rows: 60px 200px 1fr 300px;
+  grid-template-columns: repeat(4, 4fr);
+  grid-template-areas: "nav nav nav nav" "contactos contactos contactos contactos" "info info info info" "footer footer footer footer"; }
+
+.contactos {
+  grid-area: contactos;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", sans-serif;
+  color: #F2F4F4;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-shadow: 6px 6px black;
+  background-color: black; }
+
+.informacion {
+  grid-area: info;
+  display: flex;
+  flex-direction: row;
+  font-family: "Bebas Neue", sans-serif;
+  justify-content: space-evenly;
+  background-color: black; }
+  .informacion .contactar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .informacion .contactar h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 70px;
+      margin-top: 60px;
+      color: white; }
+    .informacion .contactar form {
+      display: flex;
+      flex-direction: column;
+      font-size: 30px;
+      padding: 50px 40px;
+      width: 455px;
+      color: white; }
+      .informacion .contactar form input, .informacion .contactar form textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 20px; }
+      .informacion .contactar form textarea {
+        min-height: 100px;
+        max-height: 150px;
+        max-width: 100%; }
+      .informacion .contactar form .enviar {
+        background-color: white;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: bold;
+        color: black; }
+        .informacion .contactar form .enviar:hover {
+          cursor: pointer;
+          background-color: gold; }
+  .informacion .infopersonal {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 30px;
+    margin-top: 30px;
+    color: #F4D03F;
+    text-shadow: 3px 3px black; }
+
+.contenedor4 {
+  display: grid;
+  grid-template-rows: 60px 150px 300px 300px 300px 310px;
+  grid-template-columns: repeat(4, 4fr);
+  grid-template-areas: "nav nav nav nav" "reservas reservas reservas reservas" "serv1 serv1 serv1 serv1" "serv2 serv2 serv2 serv2" "serv3 serv3 serv3 serv3" "footer footer footer footer";
+  background-color: black; }
+
+.reservas {
+  grid-area: reservas;
+  display: flex;
+  justify-content: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 70px;
+  background-color: black;
+  color: white;
+  align-items: center;
+  text-shadow: 6px 6px black; }
+
+.serv1 {
+  grid-area: serv1;
+  background-image: url("../multimedia/servicio2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 10px;
+  margin-top: 30px; }
+  .serv1 a {
+    display: flex;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 90px;
+    margin-top: 50px;
+    color: white;
+    background-color: black;
+    text-shadow: 6px 6px black;
+    padding: 10px;
+    margin: 40px;
+    text-decoration: none; }
+    .serv1 a:hover {
+      filter: opacity(0.9);
+      transform: scale(1.07);
+      cursor: pointer;
+      color: #F4D03F; }
+
+.serv2 {
+  grid-area: serv2;
+  background-image: url("../multimedia/servicio1.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 10px; }
+  .serv2 a {
+    display: flex;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 90px;
+    margin-top: 50px;
+    color: white;
+    background-color: black;
+    text-shadow: 6px 6px black;
+    padding: 10px;
+    margin: 40px;
+    text-decoration: none; }
+    .serv2 a:hover {
+      filter: opacity(0.9);
+      transform: scale(1.07);
+      cursor: pointer;
+      color: #F4D03F; }
+
+.serv3 {
+  grid-area: serv3;
+  background-image: url("../multimedia/servicio3.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 10px; }
+  .serv3 a {
+    display: flex;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 90px;
+    margin-top: 50px;
+    color: white;
+    background-color: black;
+    text-shadow: 6px 6px black;
+    padding: 10px;
+    margin: 40px;
+    text-decoration: none; }
+    .serv3 a:hover {
+      filter: opacity(0.9);
+      transform: scale(1.07);
+      cursor: pointer;
+      color: #F4D03F; }
+
+@media screen and (max-width: 1023px) {
+  .principal .titulo {
+    font-size: 50px; }
+  /*------------------------------------*/
+  .textosobremi {
+    margin: 15px;
+    padding: 10px; }
+  .titulosobremi h1 {
+    font-size: 60px;
+    margin-top: 10px; }
+  .textosobremi p {
+    margin-top: 5px;
+    font-size: 20px; }
+  .textosobremi h4 {
+    font-size: 70px; }
+  /*------------------------------------*/
+  .contenedor3 {
+    grid-template-columns: 2fr; }
+  .contactos {
+    font-size: 30px; }
+  .infopersonal {
+    font-size: 25px;
+    margin-top: 60px; }
+  .contactar h1 {
+    font-size: 60px; } }
+
+/*-------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 400px 260px; }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .titulo {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 3px 3px black;
+    flex-direction: column;
+    letter-spacing: 2px; }
+  footer {
+    background-color: white; }
+    footer h1 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 30px; }
+    footer ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 20px; }
+  /*-------------------------------------------------------------*/
+  .textosobremi {
+    margin: 15px;
+    padding: 10px; }
+    .textosobremi p {
+      margin-top: 5px;
+      font-size: 15px; }
+    .textosobremi h4 {
+      font-size: 50px; }
+  .titulosobremi {
+    margin-top: 80px; }
+    .titulosobremi h1 {
+      font-size: 60px;
+      margin-top: 10px; }
+  /*-----------------------------------------------------------------*/
+  .contenedor3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px 700px 250px; }
+  .contactos h3 {
+    font-size: 27px;
+    text-align: center;
+    text-shadow: 2px 2px black; }
+  .informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .informacion .contactar h1 {
+      font-size: 40px;
+      margin-bottom: 50px;
+      padding: 2px; }
+    .informacion .contactar form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 20px;
+      padding: 20px 20px;
+      width: 290px;
+      height: 300px;
+      margin-top: 40px; }
+    .informacion .infopersonal {
+      font-size: 20px;
+      margin-top: 60px;
+      padding: 50px; }
+  /*------------------------------------------------------------------*/
+  .contenedor4 {
+    display: grid;
+    grid-template-rows: 60px 330px 300px 300px 300px 310px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "nav nav nav nav" "reservas reservas reservas reservas" "serv1 serv1 serv1 serv1" "serv2 serv2 serv2 serv2" "serv3 serv3 serv3 serv3" "footer footer footer footer";
+    background-color: black; }
+  .reservas h3 {
+    font-size: 70px;
+    margin-top: 10px; }
+  .serv1 a {
+    font-size: 50px; }
+  .serv2 a {
+    font-size: 45px; }
+  .serv3 a {
+    font-size: 50px; }
+  /*--------------------------------------------------------*/
+  .contenedor5 {
+    display: grid;
+    grid-template-rows: 60px 950px;
+    grid-template-columns: 4fr;
+    grid-template-areas: "nav nav nav nav" "titulo titulo titulo titulo";
+    background-color: black; }
+  .contenedorportafolio {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    grid-template-rows: repeat(12, 220px);
+    grid-template-areas: "img9"  "img2" "img3"  "img12" "img10" "img5" "img4"  "img13" "img11" "img7 " "img8" "img14";
+    justify-content: center;
+    gap: 3px;
+    padding-top: 220px; }
+    .contenedorportafolio .img9 {
+      filter: none; }
+      .contenedorportafolio .img9:hover {
+        filter: none;
+        transform: none;
+        cursor: none;
+        filter: none; }
+    .contenedorportafolio .img2 {
+      filter: none; }
+      .contenedorportafolio .img2:hover {
+        filter: none;
+        transform: none;
+        cursor: none;
+        filter: none; }
+    .contenedorportafolio .img3 {
+      filter: none; }
+      .contenedorportafolio .img3:hover {
+        filter: none;
+        transform: none;
+        cursor: none;
+        filter: none; }
+    .contenedorportafolio .img4 {
+      filter: none; }
+      .contenedorportafolio .img4:hover {
+        filter: none;
+        transform: none;
+        cursor: none;
+        filter: none; }
+    .contenedorportafolio .img5 {
+      filter: none; }
+      .contenedorportafolio .img5:hover {
+        filter: none;
+        transform: none;
+        cursor: none;
+        filter: none; }
+    .contenedorportafolio .img7 {
+      filter: none; }
+      .contenedorportafolio .img7:hover {
+        filter: none;
+        transform: none;
+        cursor: none;
+        filter: none; }
+    .contenedorportafolio .img8 {
+      filter: none; }
+      .contenedorportafolio .img8:hover {
+        filter: none;
+        transform: none;
+        cursor: none;
+        filter: none; }
+    .contenedorportafolio .img9 {
+      filter: none; }
+      .contenedorportafolio .img9:hover {
+        filter: none;
+        transform: none;
+        cursor: none;
+        filter: none; }
+    .contenedorportafolio .img10 {
+      filter: none; }
+      .contenedorportafolio .img10:hover {
+        filter: none;
+        transform: none;
+        cursor: none;
+        filter: none; }
+    .contenedorportafolio .img11 {
+      filter: none; }
+      .contenedorportafolio .img11:hover {
+        filter: none;
+        transform: none;
+        cursor: none;
+        filter: none; }
+    .contenedorportafolio .img12 {
+      filter: none; }
+      .contenedorportafolio .img12:hover {
+        filter: none;
+        transform: none;
+        cursor: none;
+        filter: none; }
+    .contenedorportafolio .img13 {
+      filter: none; }
+      .contenedorportafolio .img13:hover {
+        filter: none;
+        transform: none;
+        cursor: none;
+        filter: none; }
+    .contenedorportafolio .img14 {
+      filter: none; }
+      .contenedorportafolio .img14:hover {
+        filter: none;
+        transform: none;
+        cursor: none;
+        filter: none; } }
+
+/*-----------------------------------------------------*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
-/*---------------INICIO-------------*/
+/*-----------------------------------------------------*/
 .contenedor {
   display: grid;
-  grid-template-rows: 60px 800px 200px;
+  grid-template-rows: 60px 800px 300px;
   grid-template-columns: repeat(4, 4fr);
   grid-template-areas: "nav nav nav nav" "titulo titulo titulo titulo" "footer footer footer footer"; }
 
+/*-----------------------------------------------------*/
 header {
   grid-area: nav;
-  background-color: black; }
+  background-color: black;
+  padding-bottom: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
 
 .navegacion {
   display: flex;
@@ -42,7 +636,7 @@ header {
         .navegacion .menu li a:hover {
           color: white; }
 
-/*---------------INICIO-------------*/
+/*-----------------------------------------------------*/
 .principal {
   grid-area: titulo;
   background-image: url("../multimedia/fondo3.jpg");
@@ -60,7 +654,7 @@ header {
     font-size: 90px;
     text-shadow: 6px 6px black; }
 
-/*----------------FOOTER--------------------*/
+/*-----------------------------------------------------*/
 footer {
   grid-area: footer;
   display: flex;
@@ -87,47 +681,9 @@ footer {
         color: black; }
         footer ul li a:hover {
           color: grey; }
-  footer p {
-    font-size: 21px;
+  footer h5 {
     padding: 7px;
-    font-size: black;
+    font-size: 20px;
     font-weight: bold; }
 
-/*----------------FOOTER--------------------*/
-@media screen and (max-width: 1023px) {
-  .principal .titulo {
-    font-size: 60px; } }
-
-/*------------------------------------*/
-@media screen and (max-width: 767px) {
-  .contenedor {
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 400px 300px; }
-  .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .principal .titulo {
-    font-size: 32px;
-    display: flex;
-    justify-content: center;
-    text-shadow: 3px 3px black;
-    flex-direction: column;
-    letter-spacing: 2px; }
-  footer {
-    background-color: #F7F9F9; }
-    footer h1 {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      font-size: 30px; }
-    footer ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 20px; }
-    footer p {
-      display: flex;
-      font-size: 20px;
-      justify-content: center; } }
+/*-----------------------------------------------------*/

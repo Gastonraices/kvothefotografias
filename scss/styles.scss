@@ -1,16 +1,23 @@
 @import "variables";
+@import "portafolio";
+@import "sobremi";
+@import "contacto";
+@import "servicios";
+@import "mediaqueries";
 
+/*-----------------------------------------------------*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-    
-    /*---------------INICIO-------------*/
-    
+
+/*-----------------------------------------------------*/
+
+
 .contenedor{
     display: grid;
-    grid-template-rows: 60px 800px 200px;
+    grid-template-rows: 60px 800px 300px;
     grid-template-columns: repeat(4, 4fr);
     grid-template-areas: 
     "nav nav nav nav"
@@ -18,11 +25,17 @@
     "footer footer footer footer"
     ;
     }
-    
+
+
+    /*-----------------------------------------------------*/
 header{
     grid-area: nav;
     background-color: black;
-    }
+    padding-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
 
 .navegacion{
     @include flexbox;
@@ -56,8 +69,10 @@ header{
     }
     }
     }
-    }
-    /*---------------INICIO-------------*/
+}
+/*-----------------------------------------------------*/
+
+
 .principal{
     grid-area: titulo;
     background-image: url("../multimedia/fondo3.jpg");
@@ -74,7 +89,10 @@ header{
         text-shadow: 6px 6px black;
     }
     }
-/*----------------FOOTER--------------------*/
+
+
+
+/*-----------------------------------------------------*/
 footer{
     grid-area: footer;
     @include flexbox;
@@ -102,63 +120,17 @@ footer{
         }
     }
     }
-    p{
-        font-size: map-get($estilos, fuente);
+    h5{
         padding: 7px;
-        font-size: map-get($estilos, color);
+        font-size: 20px;
         font-weight: bold;
     }
 }
 
-/*----------------FOOTER--------------------*/
 
-@media screen and (max-width: 1023px){
-    .principal{
-    .titulo{
-    font-size: 60px;
-    }
-    }
-}
-/*------------------------------------*/
-@media screen and (max-width: 767px){
-    .contenedor{
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 400px 300px;
-    }
-    .menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-    .principal{
-        .titulo{
-            font-size: 32px;
-            display: flex;
-            justify-content: center;
-            text-shadow: 3px 3px black;
-            flex-direction: column;
-            letter-spacing: 2px;
-    }
-    }
-    footer{
-        background-color: #F7F9F9;
-        h1{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            font-size: 30px;
-    }
-    ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 20px;
-    }
-    p{
-        display: flex;
-        font-size: 20px;
-        justify-content: center;
-    }
-    }
-}
+
+
+/*-----------------------------------------------------*/
+
+
+

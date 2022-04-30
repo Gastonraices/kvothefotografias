@@ -1,0 +1,82 @@
+.contenedor3{
+    display: grid;
+    grid-template-rows: 60px 200px 1fr 300px;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "contactos contactos contactos contactos"
+    "info info info info"
+    "footer footer footer footer"
+    ;
+}
+
+.contactos{
+    grid-area: contactos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fuentes;
+    color: #F2F4F4;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-shadow: 6px 6px black;
+    background-color: black;
+}
+
+.informacion{
+    grid-area: info;
+    display: flex;
+    flex-direction: row;
+    font-family: $fuentes;
+    justify-content: space-evenly;
+    background-color: black;
+    .contactar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            display: flex;
+            justify-content: center;
+            font-size: 70px;
+            margin-top: 60px;
+            color: white;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            font-size: 30px;
+            padding: 50px 40px;
+            width: 455px;
+            color: white;
+            input, textarea{
+                width: 100%;
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+            textarea {
+                min-height: 100px;
+                max-height: 150px;
+                max-width: 100%;
+            }
+            .enviar{
+                background-color: white;
+                font-family: $fuentes;
+                font-weight: bold;
+                color: black;
+                &:hover{
+                    cursor: pointer;
+                    background-color: gold;
+                }
+            }
+        }
+    }
+    .infopersonal{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        font-size: 30px;
+        margin-top: 30px;
+        color: #F4D03F;
+        text-shadow: 3px 3px black;
+    }
+}

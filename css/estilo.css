@@ -8,11 +8,11 @@
 
 .contenedor{
     display: grid;
-    grid-template-rows: 60px 670px;
+    grid-template-rows: 60px 1fr;
     grid-template-columns: repeat(4, 4fr);
     grid-template-areas: 
     "nav nav nav nav"
-    "titulo titulo titulo titulo";
+    "titulo titulo titulo titulo"
 }
 
 /*--------------GRID ESTRUCTURA------------*/
@@ -143,7 +143,7 @@ footer h5{
 
 .contenedor5{
     display: grid;
-    grid-template-rows: 60px 600px;
+    grid-template-rows: 60px 1fr;
     grid-template-columns: repeat(1, 4fr);
     grid-template-areas: 
     "nav nav nav nav"
@@ -151,7 +151,9 @@ footer h5{
     background-color: black;
     
 }
-
+.portafolio{
+    grid-area: titulo;
+}
 .contenedorportafolio{
     display: grid;
     grid-template-columns: repeat(4, 300px);
@@ -162,14 +164,13 @@ footer h5{
     "img11 img7 img8 img14";
     justify-content: center;
     gap: 7px;
-    padding-top: 100px;
+    margin-top: 40px;
 }
 
 
 .img9{
     grid-area: img9;
     background-image: url("../multimedia/img9.jpg");
-    background-position: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -340,7 +341,7 @@ footer h5{
 
 .contenedor2{
     display: grid;
-    grid-template-rows: 60px 300px 700px 300px;
+    grid-template-rows: 60px 300px 1fr 300px;
     grid-template-columns: repeat(4, 4fr);
     grid-template-areas: 
     "nav nav nav nav"
@@ -400,7 +401,7 @@ footer h5{
 
 .contenedor3{
     display: grid;
-    grid-template-rows: 60px 200px 700px 300px;
+    grid-template-rows: 60px 200px 1fr 300px;
     grid-template-columns: repeat(4, 4fr);
     grid-template-areas: 
     "nav nav nav nav"
@@ -516,14 +517,7 @@ footer h5{
     text-shadow: 6px 6px black;
 }
 
-.servicios h3{
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 30px;
-    margin-top: 30px;
-    background-color: gray;
-    letter-spacing: 10px;
-}
+
 .serv1{
     grid-area: serv1;
     background-image: url("../multimedia/servicio2.jpg");
@@ -643,8 +637,7 @@ footer h5{
     margin: 15px;
     padding: 10px;
 }
-.titulosobremi{
-}
+
 .titulosobremi h1{
     font-size: 60px;
     margin-top: 10px;

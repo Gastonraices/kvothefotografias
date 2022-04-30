@@ -1,0 +1,110 @@
+.contenedor4{
+    display: grid;
+    grid-template-rows: 60px 150px 300px 300px 300px 310px;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "reservas reservas reservas reservas"
+    "serv1 serv1 serv1 serv1"
+    "serv2 serv2 serv2 serv2"
+    "serv3 serv3 serv3 serv3"
+    "footer footer footer footer";
+    background-color: black;
+}
+
+.reservas{
+    grid-area: reservas;
+    display: flex;
+    justify-content: center;
+    font-family: $fuentes;
+    font-size: 70px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-shadow: 6px 6px black;
+}
+
+.serv1{
+    grid-area: serv1;
+    background-image: url("../multimedia/servicio2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 10px;
+    margin-top: 30px;
+    a{
+        display: flex;
+        justify-content: center;
+        font-family: $fuentes;
+        font-size: 90px;
+        margin-top: 50px;
+        color: white;
+        background-color: black;
+        text-shadow: 6px 6px black;
+        padding: 10px;
+        margin: 40px;
+        text-decoration: none;
+        &:hover{   
+            filter: opacity(0.9);
+            transform: scale(1.07);
+            cursor: pointer;
+            color: #F4D03F;
+        }
+    }
+}
+
+.serv2{
+    grid-area: serv2;
+    background-image: url("../multimedia/servicio1.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 10px;
+    a{
+        display: flex;
+        justify-content: center;
+        font-family: $fuentes;
+        font-size: 90px;
+        margin-top: 50px;
+        color: white;
+        background-color: black;
+        text-shadow: 6px 6px black;
+        padding: 10px;
+        margin: 40px;
+        text-decoration: none;
+        &:hover{   
+            filter: opacity(0.9);
+            transform: scale(1.07);
+            cursor: pointer;
+            color: #F4D03F;
+        }
+    }
+}
+
+.serv3{
+    grid-area: serv3;
+    background-image: url("../multimedia/servicio3.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 10px;
+    a{
+        display: flex;
+        justify-content: center;
+        font-family: $fuentes;
+        font-size: 90px;
+        margin-top: 50px;
+        color: white;
+        background-color: black;
+        text-shadow: 6px 6px black;
+        padding: 10px;
+        margin: 40px;
+        text-decoration: none;
+        &:hover{   
+            filter: opacity(0.9);
+            transform: scale(1.07);
+            cursor: pointer;
+            color: #F4D03F;
+        }
+    }
+}
