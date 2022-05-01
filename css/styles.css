@@ -375,10 +375,11 @@
     gap: 7px;
     margin-top: 30px; } }
 
+/*-----------------------------------------------------------*/
 @media screen and (max-width: 1023px) {
-  .principal .titulo {
-    font-size: 50px; }
-  /*------------------------------------*/
+  .contenedor .principal .titulo {
+    font-size: 60px; }
+  /*--------------------------------------------------------------*/
   .titulosobremi h1 {
     font-size: 60px;
     margin-top: 10px; }
@@ -417,18 +418,18 @@
   .contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: 150px 400px 260px; }
+    .contenedor .principal .titulo {
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      text-shadow: 3px 3px black;
+      letter-spacing: 2px;
+      padding-top: 90px; }
   .menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .principal .titulo {
-    font-size: 32px;
-    display: flex;
-    justify-content: center;
-    text-shadow: 3px 3px black;
-    flex-direction: column;
-    letter-spacing: 2px; }
   footer {
     background-color: white; }
     footer h1 {
@@ -504,7 +505,7 @@
   .contenedor5 {
     display: grid;
     grid-template-rows: 60px 1fr 300px;
-    grid-template-columns: 4fr;
+    grid-template-columns: 1fr;
     grid-template-areas: "nav" "titulo" "footer";
     background-color: black; }
   .portafolio .contenedorportafolio {
