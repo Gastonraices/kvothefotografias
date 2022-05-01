@@ -145,13 +145,13 @@ footer h5{
 
 .contenedor5{
     display: grid;
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: repeat(1, 4fr);
-    grid-template-areas: 
+    grid-template-rows: 60px 800px 300px;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-areas:  
     "nav nav nav nav"
-    "titulo titulo titulo titulo";
+    "titulo titulo titulo titulo"
+    "footer footer footer footer";
     background-color: black;
-    
 }
 .portafolio{
     grid-area: titulo;
@@ -167,6 +167,7 @@ footer h5{
     justify-content: center;
     gap: 7px;
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 
@@ -609,6 +610,21 @@ footer h5{
 
 /*-------------------TAMAÑOS------------------*/
 
+@media screen and (max-width: 1279px) {
+    .contenedorportafolio{
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(4, 170px);
+        grid-template-areas: 
+        "img9 img2 img3 "
+        "img12 img10 img5"
+        "img4 img13 img11"
+        "img7 img8 img14";
+        justify-content: center;
+        gap: 7px;
+        margin-top: 30px;
+    }
+}
 
 @media screen and (max-width: 1023px) {
     .titulo{
@@ -651,6 +667,24 @@ footer h5{
 .textosobremi h4{
     font-size: 70px;
 }
+
+
+
+
+.contenedorportafolio{
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    grid-template-rows: repeat(4, 150px);
+    grid-template-areas: 
+    "img9 img2 img3 "
+    "img12 img10 img5"
+    "img4 img13 img11"
+    "img7 img8 img14";
+    justify-content: center;
+    gap: 7px;
+    margin-top: 30px;
+}
+
 
 }
 
@@ -748,11 +782,12 @@ footer h5{
 
 .contenedor5{
     display: grid;
-    grid-template-rows: 60px 950px;
+    grid-template-rows: 60px 1fr 300px;
     grid-template-columns: 4fr;
     grid-template-areas: 
-    "nav nav nav nav"
-    "titulo titulo titulo titulo";
+    "nav"
+    "titulo"
+    "footer";
     background-color: black;
     
 }
@@ -761,7 +796,7 @@ footer h5{
 .contenedorportafolio{
     display: grid;
     grid-template-columns: repeat(1, 320px);
-    grid-template-rows: repeat(12, 220px);
+    grid-template-rows: repeat(12, 200px);
     grid-template-areas: 
     "img9" 
     "img2"

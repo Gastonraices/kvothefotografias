@@ -1,12 +1,12 @@
 .contenedor5{
     display: grid;
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: repeat(1, 4fr);
-    grid-template-areas: 
+    grid-template-rows: 60px 800px 300px;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-areas:  
     "nav nav nav nav"
-    "titulo titulo titulo titulo";
+    "titulo titulo titulo titulo"
+    "footer footer footer footer";
     background-color: black;
-    
 }
 
 .portafolio{
