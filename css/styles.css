@@ -2,11 +2,11 @@
   display: grid;
   grid-template-rows: 60px 800px 300px;
   grid-template-columns: repeat(4, 4fr);
-  grid-template-areas: "nav nav nav nav" "titulo titulo titulo titulo" "footer footer footer footer";
-  background-color: black; }
+  grid-template-areas: "nav nav nav nav" "titulo titulo titulo titulo" "footer footer footer footer"; }
 
 .portafolio {
-  grid-area: titulo; }
+  grid-area: titulo;
+  background-color: black; }
   .portafolio .contenedorportafolio {
     display: grid;
     grid-template-columns: repeat(4, 300px);

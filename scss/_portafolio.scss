@@ -6,11 +6,12 @@
     "nav nav nav nav"
     "titulo titulo titulo titulo"
     "footer footer footer footer";
-    background-color: black;
+
 }
 
 .portafolio{
     grid-area: titulo;
+    background-color: black;
     .contenedorportafolio{
         display: grid;
         grid-template-columns: repeat(4, 300px);
