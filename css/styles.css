@@ -17,7 +17,7 @@
     margin-top: 40px; }
     .portafolio .contenedorportafolio .img9 {
       grid-area: img9;
-      background-image: url("../multimedia/img9.jpg");
+      background-image: url("../multimedia/img16.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -41,7 +41,7 @@
         filter: none; }
     .portafolio .contenedorportafolio .img3 {
       grid-area: img3;
-      background-image: url("../multimedia/img3.jpg");
+      background-image: url("../multimedia/img9.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;

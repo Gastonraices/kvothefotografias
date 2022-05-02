@@ -25,7 +25,7 @@
         margin-top: 40px;
         .img9{
             grid-area: img9;
-            background-image: url("../multimedia/img9.jpg");
+            background-image: url("../multimedia/img16.jpg");
             @include background;
             &:hover{    
                 filter: opacity(0.9);
@@ -47,7 +47,7 @@
         }
         .img3{
             grid-area: img3;
-            background-image: url("../multimedia/img3.jpg");
+            background-image: url("../multimedia/img9.jpg");
             @include background;
             &:hover{    
                 filter: opacity(0.9);
