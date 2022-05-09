@@ -511,7 +511,7 @@
     background-color: black; }
   .portafolio .contenedorportafolio {
     display: grid;
-    grid-template-columns: repeat(1, 320px);
+    grid-template-columns: repeat(1, 370px);
     grid-template-rows: repeat(12, 220px);
     grid-template-areas: "img9"  "img2" "img3"  "img12" "img10" "img5" "img4"  "img13" "img11" "img7 " "img8" "img14";
     justify-content: center;
@@ -608,8 +608,18 @@
         filter: none;
         transform: none;
         cursor: none;
-        filter: none; }
-  /*--------------------------------------------------------*/ }
+        filter: none; } }
+
+@media screen and (max-width: 374px) {
+  .portafolio .contenedorportafolio {
+    display: grid;
+    grid-template-columns: repeat(1, 310px);
+    grid-template-rows: repeat(12, 220px);
+    grid-template-areas: "img9"  "img2" "img3"  "img12" "img10" "img5" "img4"  "img13" "img11" "img7 " "img8" "img14";
+    justify-content: center;
+    gap: 3px;
+    padding-top: 190px;
+    margin-bottom: 5px; } }
 
 /*-----------------------------------------------------*/
 * {
@@ -631,7 +641,7 @@ header {
   padding-bottom: 30px;
   position: fixed;
   width: 100%;
-  z-index: 100; }
+  z-index: 1; }
 
 .navegacion {
   display: flex;
