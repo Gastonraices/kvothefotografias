@@ -11,6 +11,7 @@
     ;
 }
 
+
 .titulosobremi {
     grid-area: tisobremi;
     display: flex;
@@ -29,7 +30,7 @@
     grid-area: sobremi;
     display: flex;
     flex-direction: row;
-    font-family: $fuentes;
+    font-family: 'Roboto Slab', serif;
     justify-content: space-evenly;
     background-color: black;
     .textosobremi{
@@ -40,8 +41,8 @@
         margin: 80px;
         p{
             color: white;
-            font-size: 30px;
-            padding: 30px;
+            font-size: 27px;
+            padding: 20px;
         }
         h4{
             font-size: 70px;

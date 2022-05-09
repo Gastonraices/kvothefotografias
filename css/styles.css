@@ -13,7 +13,7 @@
     grid-template-rows: repeat(3, 200px);
     grid-template-areas: "img9 img2 img3 img12" "img10 img5 img4 img13" "img11 img7 img8 img14";
     justify-content: center;
-    gap: 7px;
+    gap: 2px;
     margin-top: 40px; }
     .portafolio .contenedorportafolio .img9 {
       grid-area: img9;
@@ -183,7 +183,7 @@
   grid-area: sobremi;
   display: flex;
   flex-direction: row;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: 'Roboto Slab', serif;
   justify-content: space-evenly;
   background-color: black; }
   .principalsobremi .textosobremi {
@@ -194,8 +194,8 @@
     margin: 80px; }
     .principalsobremi .textosobremi p {
       color: white;
-      font-size: 30px;
-      padding: 30px; }
+      font-size: 27px;
+      padding: 20px; }
     .principalsobremi .textosobremi h4 {
       font-size: 70px;
       padding: 10px;
@@ -245,7 +245,7 @@
       font-size: 30px;
       padding: 50px 40px;
       width: 455px;
-      color: white; }
+      color: gray; }
       .informacion .contactar form input, .informacion .contactar form textarea {
         width: 100%;
         margin-bottom: 20px;
@@ -369,10 +369,10 @@
   .portafolio .contenedorportafolio {
     display: grid;
     grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(4, 170px);
+    grid-template-rows: repeat(4, 180px);
     grid-template-areas: "img9 img2 img3 " "img12 img10 img5" "img4 img13 img11" "img7 img8 img14";
     justify-content: center;
-    gap: 7px;
+    gap: 2px;
     margin-top: 30px; } }
 
 /*-----------------------------------------------------------*/
@@ -390,7 +390,7 @@
       margin-top: 5px;
       font-size: 20px; }
     .principalsobremi .textosobremi h4 {
-      font-size: 70px; }
+      font-size: 50px; }
   /*------------------------------------*/
   .contenedor3 {
     grid-template-columns: 2fr; }
@@ -410,19 +410,20 @@
     grid-template-rows: repeat(4, 150px);
     grid-template-areas: "img9 img2 img3 " "img12 img10 img5" "img4 img13 img11" "img7 img8 img14";
     justify-content: center;
-    gap: 7px;
+    gap: 2px;
     margin-top: 30px; } }
 
 /*-------------------------------------------------------------------*/
 @media screen and (max-width: 767px) {
   .contenedor {
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 400px 260px; }
+    grid-template-rows: 150px 400px 300px; }
     .contenedor .principal .titulo {
       font-size: 40px;
       display: flex;
       justify-content: center;
       text-shadow: 3px 3px black;
+      --animate-duration: 3s;
       letter-spacing: 2px;
       padding-top: 90px; }
   .menu {
@@ -450,7 +451,7 @@
       margin-top: 5px;
       font-size: 15px; }
     .principalsobremi .textosobremi h4 {
-      font-size: 50px; }
+      font-size: 30px; }
   .titulosobremi {
     margin-top: 80px; }
     .titulosobremi h1 {
@@ -459,7 +460,7 @@
   /*-----------------------------------------------------------------*/
   .contenedor3 {
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 150px 700px 250px; }
+    grid-template-rows: 150px 150px 700px 300px; }
   .contactos h3 {
     font-size: 25px;
     text-align: center;
@@ -488,7 +489,7 @@
   /*------------------------------------------------------------------*/
   .contenedor4 {
     display: grid;
-    grid-template-rows: 60px 330px 300px 300px 300px 310px;
+    grid-template-rows: 60px 330px 300px 300px 300px 300px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "nav nav nav nav" "reservas reservas reservas reservas" "serv1 serv1 serv1 serv1" "serv2 serv2 serv2 serv2" "serv3 serv3 serv3 serv3" "footer footer footer footer";
     background-color: black; }
@@ -515,7 +516,8 @@
     grid-template-areas: "img9"  "img2" "img3"  "img12" "img10" "img5" "img4"  "img13" "img11" "img7 " "img8" "img14";
     justify-content: center;
     gap: 3px;
-    padding-top: 220px; }
+    padding-top: 190px;
+    margin-bottom: 5px; }
     .portafolio .contenedorportafolio .img9 {
       filter: none; }
       .portafolio .contenedorportafolio .img9:hover {
@@ -675,7 +677,8 @@ header {
     margin: 90px 5px 0px 5px;
     letter-spacing: 5px;
     font-size: 90px;
-    text-shadow: 6px 6px black; }
+    text-shadow: 6px 6px black;
+    --animate-duration: 3s; }
 
 /*-----------------------------------------------------*/
 footer {
@@ -708,5 +711,3 @@ footer {
     padding: 7px;
     font-size: 20px;
     font-weight: bold; }
-
-/*-----------------------------------------------------*/

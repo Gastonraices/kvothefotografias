@@ -8,6 +8,7 @@
     "info info info info"
     "footer footer footer footer"
     ;
+
 }
 
 .contactos{
@@ -29,7 +30,7 @@
     flex-direction: row;
     font-family: $fuentes;
     justify-content: space-evenly;
-    background-color: black;
+    background-color:  black ;
     .contactar{
         display: flex;
         flex-direction: column;
@@ -47,7 +48,7 @@
             font-size: 30px;
             padding: 50px 40px;
             width: 455px;
-            color: white;
+            color: gray;
             input, textarea{
                 width: 100%;
                 margin-bottom: 20px;
