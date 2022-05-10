@@ -12,21 +12,7 @@
     box-sizing: border-box;
 }
 
-/*-----------------------------------------------------*/
 
-
-.contenedor{
-    display: grid;
-    grid-template-rows: 60px 800px 300px;
-    grid-template-columns: repeat(4, 4fr);
-    grid-template-areas: 
-    "nav nav nav nav"
-    "titulo titulo titulo titulo"
-    "footer footer footer footer"
-    ;
-    }
-
-/*-----------------------------------------------------*/
 header{
     grid-area: nav;
     background-color: black;
@@ -69,8 +55,31 @@ header{
     }
     }
 }
+
+
 /*-----------------------------------------------------*/
 
+
+.contenedor{
+    display: grid;
+    grid-template-rows: 60px 800px 300px;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "footer footer footer footer"
+    ;
+}
+
+
+.home{
+    background-image: url("../multimedia/fondo3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    grid-area: nav;
+    padding-bottom: 30px;
+}
 
 .principal{
     grid-area: titulo;
@@ -93,6 +102,9 @@ header{
 
 
 /*-----------------------------------------------------*/
+
+
+
 footer{
     grid-area: footer;
     @include flexbox;

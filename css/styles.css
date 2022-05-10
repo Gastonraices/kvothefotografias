@@ -273,7 +273,7 @@
 
 .contenedor4 {
   display: grid;
-  grid-template-rows: 60px 150px 300px 300px 300px 310px;
+  grid-template-rows: 60px 150px 300px 300px 300px 300px;
   grid-template-columns: repeat(4, 4fr);
   grid-template-areas: "nav nav nav nav" "reservas reservas reservas reservas" "serv1 serv1 serv1 serv1" "serv2 serv2 serv2 serv2" "serv3 serv3 serv3 serv3" "footer footer footer footer";
   background-color: black; }
@@ -391,7 +391,7 @@
       font-size: 20px; }
     .principalsobremi .textosobremi h4 {
       font-size: 50px; }
-  /*------------------------------------*/
+  /*--------------------------------------------------*/
   .contenedor3 {
     grid-template-columns: 2fr; }
   .contactos h3 {
@@ -610,6 +610,7 @@
         cursor: none;
         filter: none; } }
 
+/*--------------------------------------------------------*/
 @media screen and (max-width: 374px) {
   .portafolio .contenedorportafolio {
     display: grid;
@@ -627,14 +628,6 @@
   margin: 0;
   box-sizing: border-box; }
 
-/*-----------------------------------------------------*/
-.contenedor {
-  display: grid;
-  grid-template-rows: 60px 800px 300px;
-  grid-template-columns: repeat(4, 4fr);
-  grid-template-areas: "nav nav nav nav" "titulo titulo titulo titulo" "footer footer footer footer"; }
-
-/*-----------------------------------------------------*/
 header {
   grid-area: nav;
   background-color: black;
@@ -672,6 +665,20 @@ header {
           color: white; }
 
 /*-----------------------------------------------------*/
+.contenedor {
+  display: grid;
+  grid-template-rows: 60px 800px 300px;
+  grid-template-columns: repeat(4, 4fr);
+  grid-template-areas: "nav nav nav nav" "titulo titulo titulo titulo" "footer footer footer footer"; }
+
+.home {
+  background-image: url("../multimedia/fondo3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  grid-area: nav;
+  padding-bottom: 30px; }
+
 .principal {
   grid-area: titulo;
   background-image: url("../multimedia/fondo3.jpg");
