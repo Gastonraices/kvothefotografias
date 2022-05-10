@@ -37,9 +37,12 @@ header{
     }
     .menu{
         display: flex;
-        list-style: none;
-        margin: 15px 10px 10px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
     li{
+        list-style: none;
         margin: 0 15px;
         font-family: $fuentes;
     
@@ -71,7 +74,6 @@ header{
     ;
 }
 
-
 .home{
     background-image: url("../multimedia/fondo3.jpg");
     background-attachment: fixed;
@@ -101,9 +103,8 @@ header{
 
 
 
+
 /*-----------------------------------------------------*/
-
-
 
 footer{
     grid-area: footer;

@@ -425,12 +425,19 @@
       text-shadow: 3px 3px black;
       --animate-duration: 3s;
       letter-spacing: 2px;
-      padding-top: 90px; }
-  .menu {
+      padding-top: 30px; }
+  .navegacion {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    font-size: 10px;
+    margin-top: 10px; }
+    .navegacion .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
   footer {
     background-color: white; }
     footer h1 {
@@ -452,19 +459,19 @@
       font-size: 15px; }
     .principalsobremi .textosobremi h4 {
       font-size: 30px; }
-  .titulosobremi {
-    margin-top: 80px; }
-    .titulosobremi h1 {
-      font-size: 60px;
-      margin-top: 10px; }
+  .titulosobremi h1 {
+    font-size: 60px;
+    margin-top: 5px; }
   /*-----------------------------------------------------------------*/
   .contenedor3 {
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 150px 700px 300px; }
-  .contactos h3 {
-    font-size: 25px;
-    text-align: center;
-    text-shadow: 2px 2px black; }
+    grid-template-rows: 60px 150px 700px 300px; }
+  .contactos {
+    margin-top: 40px; }
+    .contactos h3 {
+      font-size: 24px;
+      text-align: center;
+      text-shadow: 2px 2px black; }
   .informacion {
     display: flex;
     flex-direction: column;
@@ -489,7 +496,7 @@
   /*------------------------------------------------------------------*/
   .contenedor4 {
     display: grid;
-    grid-template-rows: 60px 330px 300px 300px 300px 300px;
+    grid-template-rows: 60px 250px 300px 300px 300px 300px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "nav nav nav nav" "reservas reservas reservas reservas" "serv1 serv1 serv1 serv1" "serv2 serv2 serv2 serv2" "serv3 serv3 serv3 serv3" "footer footer footer footer";
     background-color: black; }
@@ -516,7 +523,7 @@
     grid-template-areas: "img9"  "img2" "img3"  "img12" "img10" "img5" "img4"  "img13" "img11" "img7 " "img8" "img14";
     justify-content: center;
     gap: 3px;
-    padding-top: 190px;
+    padding-top: 50px;
     margin-bottom: 5px; }
     .portafolio .contenedorportafolio .img9 {
       filter: none; }
@@ -611,6 +618,20 @@
         filter: none; } }
 
 /*--------------------------------------------------------*/
+@media screen and (max-width: 500px) {
+  header .navegacion .logo {
+    font-size: 20px; }
+  header .navegacion .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px; }
+    header .navegacion .menu li {
+      margin: 0 4px; }
+      header .navegacion .menu li a {
+        font-size: 18px; } }
+
+/*--------------------------------------------------------*/
 @media screen and (max-width: 374px) {
   .portafolio .contenedorportafolio {
     display: grid;
@@ -619,7 +640,7 @@
     grid-template-areas: "img9"  "img2" "img3"  "img12" "img10" "img5" "img4"  "img13" "img11" "img7 " "img8" "img14";
     justify-content: center;
     gap: 3px;
-    padding-top: 190px;
+    padding-top: 50px;
     margin-bottom: 5px; } }
 
 /*-----------------------------------------------------*/
@@ -651,9 +672,12 @@ header {
       color: white; }
   .navegacion .menu {
     display: flex;
-    list-style: none;
-    margin: 15px 10px 10px 10px; }
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; }
     .navegacion .menu li {
+      list-style: none;
       margin: 0 15px;
       font-family: "Bebas Neue", sans-serif; }
       .navegacion .menu li a {
