@@ -414,7 +414,7 @@
     header{
     .navegacion{
         .logo{
-            font-size: 20px;
+            font-size: 25px;
         }
         .menu{
             display: flex;
@@ -422,9 +422,9 @@
             justify-content: space-around;
             padding: 10px;
         li{
-            margin: 0 4px;
+            margin: 0 5px;
         a{
-            font-size: 18px;
+            font-size: 20px;
         }
         }
         }
@@ -439,6 +439,30 @@
 /*--------------------------------------------------------*/
 
 @media screen and (max-width: 374px){
+
+    header{
+        .navegacion{
+            .logo{
+                font-size: 20px;
+            }
+            .menu{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding: 10px;
+            li{
+                margin: 0 5px;
+            a{
+                font-size: 17px;
+            }
+            }
+            }
+        }
+    }
+
+
+
+
     .portafolio{
         .contenedorportafolio{
         display: grid;

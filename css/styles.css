@@ -203,7 +203,6 @@
       color: #F4D03F;
       text-shadow: 2px 2px black; }
 
-/*------------------------------------*/
 .contenedor3 {
   display: grid;
   grid-template-rows: 60px 200px 1fr 300px;
@@ -620,6 +619,20 @@
 /*--------------------------------------------------------*/
 @media screen and (max-width: 500px) {
   header .navegacion .logo {
+    font-size: 25px; }
+  header .navegacion .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px; }
+    header .navegacion .menu li {
+      margin: 0 5px; }
+      header .navegacion .menu li a {
+        font-size: 20px; } }
+
+/*--------------------------------------------------------*/
+@media screen and (max-width: 374px) {
+  header .navegacion .logo {
     font-size: 20px; }
   header .navegacion .menu {
     display: flex;
@@ -627,12 +640,9 @@
     justify-content: space-around;
     padding: 10px; }
     header .navegacion .menu li {
-      margin: 0 4px; }
+      margin: 0 5px; }
       header .navegacion .menu li a {
-        font-size: 18px; } }
-
-/*--------------------------------------------------------*/
-@media screen and (max-width: 374px) {
+        font-size: 17px; }
   .portafolio .contenedorportafolio {
     display: grid;
     grid-template-columns: repeat(1, 310px);
